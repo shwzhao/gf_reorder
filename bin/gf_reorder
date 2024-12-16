@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+COMMAND_PATH="$SCRIPT_DIR/../main.py"
+
+python "$COMMAND_PATH" "$@"
