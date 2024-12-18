@@ -46,7 +46,7 @@ def update_gff(input_gff, rename_dict, output_gff, log_entries):
             if not line:  # 跳过空行
                 continue
             if line.startswith("#"):
-                out_f.write(line)
+                out_f.write(line + 'n')
                 continue
 
             fields = line.strip().split('\t')
